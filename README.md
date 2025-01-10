@@ -3,8 +3,7 @@ This MATLAB script is designed for performing solvation free energy calculations
 Below is an overview of its functionality, structure, and usage instructions.
 
 ---------------------------------------
-Author
-Francisco Carlos Paes
+Author: Francisco Carlos Paes
 January 2025
 Equipe Thermodynamique et Energie (ThermE)
 Laboratoire Réactions et Génie des Procédés (LRGP)
