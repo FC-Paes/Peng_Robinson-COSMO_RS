@@ -2,7 +2,6 @@ Solvation Data Simulation and Optimization Script
 This MATLAB script is designed for performing solvation free energy calculations, enabling users to conduct simulations or optimize parameters for solvation free energy data. 
 Below is an overview of its functionality, structure, and usage instructions.
 
----------------------------------------
   Author: Francisco Carlos Paes
   January 2025
   Equipe Thermodynamique et Energie (ThermE)
