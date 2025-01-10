@@ -67,4 +67,19 @@ Plots will be generated for molecules, free radicals, transition states, or acti
 ---------------------------------------
 Customization:
 
+(1) New molecules Can be added in the file 'Properties/Compounds_data.xlsm'. In this file you can insert molecules in two ways:
+- molecules whose experimental data is known. You can provide the critical constants, acentric factors, parameters of the Twu-91 alpha function, volume translation constants, etc... (use the worsheet database_exp)
+  Note that their quantum-based sigma profile can be added in the folder 'sigma-profiles'
+- molecules for which only the decomposition into functional groups is known (use the worsheet database_gc)
+  In this case, all input parameters are predicted through group contribution
+
+(2) New functional groups and their parameters can be added in the following worksheets of 'Properties/Compounds_data.xlsm'
+- groups_UNIFAC (list of available functional groups)
+- psigma_GC (group contribution constants to calculate sigma-profiles)
+- EoS_GC (group contribution constants to calculate the Peng-Robinson parameters)
+
+(3) The Solvation Free Energy databases can be modified in the spreadsheet 'solvation-data/ESOLV_DATA.xlxs' 
+
+---------------------------------------
+
 Enjoy simulating!
