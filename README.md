@@ -11,24 +11,26 @@ UMR 7274 CNRS - Université de Lorraine
 ---------------------------------------
 Features
 
-Solvation Data Loading:
+(1) Solvation Data Loading:
   - Solvation data for stable molecules, free radicals, and transition states.
   - Solvation free energies of activation for H-abstraction reactions.
-  
-Input Parameters:
-  Critical constants, acentric factors, Twu-91 alpha function parameters.
-  COSMO-RS sigma-profiles.
-  Functional groups and their contribution parameters.
-  Peng-Robinson Equation of State (PR EoS) and COSMO-RS universal constants.
+  - 
+(2) Input Parameters:
+  - Critical constants,
+  - acentric factors,
+  - Twu-91 alpha function parameters.
+  - COSMO-RS sigma-profiles.
+  - Functional groups and their contribution parameters.
+  - Peng-Robinson Equation of State (PR EoS) and COSMO-RS universal constants.
 
-Calculations:
+(3) Calculations:
+  - Perform simulations of solvation free energy data
+  - Optimizations (contribution constants of function groups) followed by simulations
 
-Perform either simulations or optimizations followed by simulations.
-Generate results as parity plots and deviation distribution plots.
-Outputs:
+(4) Outputs:
+  - Results stored in solvation-data/solv-energy-res.dat.
+  - Visual plots and deviation metrics for analysis.
 
-Results stored in solvation-data/solv-energy-res.dat.
-Visual plots for analysis.
 Requirements
 MATLAB installed with necessary toolboxes.
 Ensure all required files are available:
