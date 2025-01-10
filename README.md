@@ -1,6 +1,7 @@
 Solvation Data Simulation and Optimization Script
 This MATLAB script is designed for performing solvation free energy calculations, enabling users to conduct simulations or optimize parameters for solvation free energy data. 
 Below is an overview of its functionality, structure, and usage instructions.
+
 ---------------------------------------
 Author
 Francisco Carlos Paes
@@ -8,6 +9,7 @@ January 2025
 Equipe Thermodynamique et Energie (ThermE)
 Laboratoire Réactions et Génie des Procédés (LRGP)
 UMR 7274 CNRS - Université de Lorraine
+
 ---------------------------------------
 Features
 
@@ -31,29 +33,42 @@ Features
   - Results stored in solvation-data/solv-energy-res.dat.
   - Visual plots and deviation metrics for analysis.
 
+---------------------------------------
 Requirements
 MATLAB installed with necessary toolboxes.
 Ensure all required files are available:
-source/ directory containing relevant functions.
-solvation-data/ESOLV_DATA.xlsx for solvation data.
-properties/Compounds_data.xlsm for compound properties.
-sigma-profiles/p_sigma_res.xlsx for sigma profiles.
-Usage Instructions
-Setup:
+- source/ directory containing all functions.
+- solvation-data/ESOLV_DATA.xlsx for solvation data.
+- properties/Compounds_data.xlsm for pure compound inputs.
+- sigma-profiles for to access the .dat files of sigma profiles.
 
-Place all necessary files in the same directory structure as described.
+---------------------------------------
+Usage Instructions
+
+(1) Setup: 
 Edit the Excel file INPUTS.xlsx to define settings for your calculations.
+- Type of calculation = similation only or optimization + simulation
+- Data to simulate = Molecules, Free Radicals, Transition-States, or Solvation Free Energy of Activation
+- Level of theory = only BP-TZVPD-FINE is available in this implementation
+- Sigma-profiles (solvents) = chose between Quantum-based sigma-profiles or sigma-profiles predicted by group contribution
+- Sigma-profiles (solutes)  = ibid
+- method for EoS parameters (solvents) = chose between experimental data or group contribution predictions to calculate the Peng-Robinson EoS parameters
+- method for EoS parameters (solutes)  = ibid
+- Alpha-function = Alpha-function to be used with the Peng-Robinson EoS (Twu-91 or SOave 1972)
+You can also modify the universal constants of the mixing rule of the Peng-Robinson equation, as well as the universal constants of the COSMO-RS model
+To do this, select either 'Parametrization_Mix_Rule' or 'Parametrization_COSMO' worksheets
+
+(2) Place all necessary files in the same directory structure as described.
+
 Run the Script:
 
-Execute the script in MATLAB by running main_script.m.
-The script will prompt for calculation options:
-Simulation only: Directly simulate solvation energies using existing parameters.
-Optimization + simulation: Optimize group contributions before simulation.
-None: Exit the program.
-Output:
+(3) Execute the script in MATLAB by running MAIN_ESOLV.m.
+The script will prompt a wait bar to follow the progress of the chosen calculation
 
-Results will be saved in solvation-data/solv-energy-res.dat.
+(4) Results will be saved in solvation-data/solv-energy-res.dat.
 Plots will be generated for molecules, free radicals, transition states, or activation free energies, depending on the input.
+
+---------------------------------------
 Customization:
 
 Modify the input files to include new solutes or parameters.
