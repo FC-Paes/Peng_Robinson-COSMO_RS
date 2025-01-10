@@ -58,34 +58,13 @@ Edit the Excel file INPUTS.xlsx to define settings for your calculations.
 You can also modify the universal constants of the mixing rule of the Peng-Robinson equation, as well as the universal constants of the COSMO-RS model
 To do this, select either 'Parametrization_Mix_Rule' or 'Parametrization_COSMO' worksheets
 
-(2) Place all necessary files in the same directory structure as described.
+(2) Execute the script in MATLAB by running MAIN_ESOLV.m.
+The script will prompt a wait bar to follow the progress of the calculations
 
-Run the Script:
-
-(3) Execute the script in MATLAB by running MAIN_ESOLV.m.
-The script will prompt a wait bar to follow the progress of the chosen calculation
-
-(4) Results will be saved in solvation-data/solv-energy-res.dat.
+(3) Results will be saved in solvation-data/solv-energy-res.dat.
 Plots will be generated for molecules, free radicals, transition states, or activation free energies, depending on the input.
 
 ---------------------------------------
 Customization:
-
-Modify the input files to include new solutes or parameters.
-Adjust script sections for specific calculation methods or visualizations.
-Key Functions
-READ_OPTIONS: Reads and loads user-defined options.
-PARAMETRIZATION_COSMO: Loads COSMO-RS and PR EoS parameters.
-LOAD_GCM: Loads group contribution models.
-SIMULATION and SIMULATION_DDG: Performs solvation energy calculations.
-OPTIMIZATION_GC: Optimizes group contribution parameters.
-Plotting Functions:
-PLOT_MOLECULES, PLOT_RADICALS, PLOT_TS, PLOT_ACTIVATION.
-Notes
-Ensure MATLAB has access to all required directories and files before running the script.
-To optimize specific molecule types, follow prompts during the Optimization + simulation step.
-Check solvation-data/solv-energy-res.dat for detailed results.
-Contact
-For questions or issues, please contact Francisco Carlos Paes at the Thermodynamique et Energie (ThermE) team, LRGP.
 
 Enjoy simulating!
