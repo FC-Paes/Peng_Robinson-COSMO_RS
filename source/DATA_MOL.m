@@ -69,10 +69,10 @@ switch methodPR
         molecule_list.Tc = data_molecule.Tc_K_(1); % [K]
         molecule_list.Pc = data_molecule.Pc_bar_(1); % [bar]
         molecule_list.w = data_molecule.w___(1); % [-]
-        molecule_list.L = 8888; % [-]
-        molecule_list.M = 8888; % [-]
-        molecule_list.N = 8888; % [-]
-        molecule_list.c = 8888; % [L/mol]
+        molecule_list.L = data_molecule.L___(1); % [-]
+        molecule_list.M = data_molecule.M___(1); % [-]
+        molecule_list.N = data_molecule.N___(1); % [-]
+        molecule_list.c = data_molecule.c_cm3_mol_(1)/1000; % [L/mol]
 end
 
 %-----------------------------------
