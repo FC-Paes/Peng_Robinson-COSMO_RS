@@ -34,8 +34,10 @@ Features
   - Visual plots and deviation metrics for analysis.
 
 ---------------------------------------
-Requirements
+Requirements:
+
 MATLAB installed with necessary toolboxes.
+
 Ensure all required files are available:
 - source/ directory containing all functions.
 - solvation-data/ESOLV_DATA.xlsx for solvation data.
@@ -43,7 +45,7 @@ Ensure all required files are available:
 - sigma-profiles for to access the .dat files of sigma profiles.
 
 ---------------------------------------
-Usage Instructions
+Usage Instructions:
 
 (1) Setup: 
 Edit the Excel file INPUTS.xlsx to define settings for your calculations.
