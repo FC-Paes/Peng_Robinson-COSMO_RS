@@ -16,7 +16,7 @@ Features
 (1) Solvation Data Loading:
   - Solvation data for stable molecules, free radicals, and transition states.
   - Solvation free energies of activation for H-abstraction reactions.
-  - 
+    
 (2) Input Parameters:
   - Critical constants,
   - acentric factors,
