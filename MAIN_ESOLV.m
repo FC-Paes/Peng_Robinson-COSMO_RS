@@ -90,7 +90,6 @@ par.GCM = LOAD_GCM;
 
 % -- exp data for PR EoS parameters, along with quantum based sigma profile
 data.exp = readtable("properties\Compounds_data.xlsm",Sheet='database_exp');
-data.psigma_qm = readtable("sigma-profiles\p_sigma_res.xlsx",Sheet='QM',ReadVariableNames=true);
 
 % -- molecules and group decomposition to apply the GC-based methods
 data.gc = readtable("properties\Compounds_data.xlsm",Sheet='database_gc');
